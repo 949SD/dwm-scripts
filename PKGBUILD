@@ -1,10 +1,11 @@
 # Maintainer: David K david.dk949@gmail.com
-pkgname=dwm-scripts
+_pkgname=dwm-scripts
+pkgname="${_pkgname}-949sd"
 pkgver=unknown
 pkgrel=0
 pkgdesc="Scripts to be used with my build of dwm."
 arch=('x86_64')
-url="https://github.com/dk949/$pkgname"
+url="https://github.com/dk949/$_pkgname"
 license=('MIT')
 optdepends=(
     'figlet: optional for layout-check'
@@ -27,7 +28,7 @@ provides=(
     'turnoff'
     'update-variables'
 )
-source=("git+$url")
+source=("$pkgname::git+$url")
 md5sums=() #autofill using updpkgsums
 sha256sums=('SKIP')
 
