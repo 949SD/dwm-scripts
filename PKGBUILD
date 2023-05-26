@@ -6,6 +6,16 @@ pkgdesc="Scripts to be used with my build of dwm."
 arch=('x86_64')
 url="https://github.com/dk949/$pkgname"
 license=('MIT')
+optdepends=(
+    'figlet: optional for layout-check'
+    'feh: for makebg'
+    'picom: for picom-end picom-start'
+    'networkmanager: for try-connect'
+    'systemd-sysvcompat: for turnoff'
+    'pacman-contrib: for update-variables'
+    'python: for update-variables'
+    'git: for update-variables'
+)
 provides=(
     'batnotify'
     'highestUsageProcess'
